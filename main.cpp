@@ -3,7 +3,7 @@ def normalize_phone_number(phone):
     
     if phone.startswith('0'):
         phone = phone[1:]
-    return '+84' + phone[:3] + ' ' + phone[3:6] + ' ' + phone[6:]
+    return '+0' + phone[:3] + ' ' + phone[3:6] + ' ' + phone[6:]
 
 # Kiểm thử
 if __name__ == "__main__":
