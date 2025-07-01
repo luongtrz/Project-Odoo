@@ -1,11 +1,6 @@
-#include <iostream>
+def to_hashtag_format(name):
+    return '#' + ''.join(c for c in name if c != ' ')
 
-int sum(int a, int b) {
-    return a + b;
-}
-
-int main() {
-    std::cout << "Hello, World!" << std::endl;
-    std::cout << "Sum: " << sum(3, 5) << std::endl;
-    return 0;
-}
+# Kiểm thử
+if __name__ == "__main__":
+    print(to_hashtag_format("Tran Luong"))
