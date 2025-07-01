@@ -1,10 +1,6 @@
-def normalize_phone_number(phone):
-    phone = phone.replace('.', '').replace('-', '')
-    
-    if phone.startswith('0'):
-        phone = phone[1:]
-    return '+0' + phone[:3] + ' ' + phone[3:6] + ' ' + phone[6:]
+def to_hashtag_format(name):
+    return '#' + ''.join(c for c in name if c != ' ')
 
 # Kiểm thử
 if __name__ == "__main__":
-    print("Kết quả:", normalize_phone_number("0123.456.789"))
+    print(to_hashtag_format("Tran Luong"))
